@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css" />
+  </head>
+  <body class="font-grotesk h-screen w-full">
+    <article
+      class="flex items-center justify-center flex-col text-center lg:flex-row lg:h-full lg:w-max lg:mx-auto bg-[#fff]"
+    >
+      <!-- First Section -->
+      <section
+        class="bg-gradient-to-b from-lSlateBlueT to-lRoyalBlueT py-5 px-8 flex flex-col items-center rounded-b-3xl text-[#ffffff] lg:rounded-3xl lg:h-[45%] lg:w-[40%]"
+      >
+        <h1 class="font-bold opacity-70 text-2xl mb-4">Your Result</h1>
+        <div
+          class="bg-gradient-to-b from-persianBlueC to-lRoyalBlueT-100 rounded-full h-40 w-40 flex items-center justify-center flex-col lg:h-64 lg:w-48 lg:pt-5"
+        >
+          <div class="flex flex-col justify-center items-center font-light">
+            <span class="font-bold text-[#ffffff] text-6xl lg:text-7xl"
+              >76</span
+            >
+            <p class="py-2 opacity-40">of 100</p>
+          </div>
+        </div>
+        <h2 class="font-bold text-2xl mt-5 lg:mt-8">Great</h2>
+        <p class="mt-2 mb-4 px-4 opacity-80 lg:px-6">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <!-- Second Section -->
+      <section
+        class="text-start w-full p-6 text-[#ffffff] flex flex-col justify-around lg:h-[45%] lg:w-[40%] lg:p-8 lg:pb-24 lg:shadow-2xl lg:ml-[-25px] lg:rounded-r-3xl lg:pl-14"
+      >
+        <h3 class="text-xl font-bold text-darkGrayBlue lg:pt-6">Summary</h3>
+        <ol
+          class="h-full w-full flex flex-col gap-5 mt-4 lg:gap-4 lg:pt-10 justify-center"
+        >
+          <li class="bg-lightRed item">
+            <h4 class="text-lightRed font-bold flex gap-3 item-center">
+              <img src="/assets/images/icon-reaction.svg" alt="" />Reaction
+            </h4>
+            <div class="text-darkGrayBlue font-bold">
+              80 <span class="text-darkGrayBlue opacity-40">/ 100</span>
+            </div>
+          </li>
+          <li class="bg-orangeYellow item">
+            <h4 class="text-orangeYellow font-bold flex gap-3 item-center">
+              <img src="/assets/images/icon-memory.svg" alt="" /> Memory
+            </h4>
+            <div class="text-darkGrayBlue font-bold">
+              92 <span class="text-darkGrayBlue opacity-40">/ 100</span>
+            </div>
+          </li>
+          <li class="bg-greeTeal item">
+            <h4 class="text-greeTeal font-bold flex gap-3 item-center">
+              <img src="/assets/images/icon-verbal.svg" alt="" />Verbal
+            </h4>
+            <div class="text-darkGrayBlue font-bold">
+              61 <span class="text-darkGrayBlue opacity-40">/ 100</span>
+            </div>
+          </li>
+          <li class="bg-cobaltBlue item">
+            <h4 class="text-lRoyalBlueT font-bold flex gap-3 item-center">
+              <img src="/assets/images/icon-visual.svg" alt="" />
+              Visual
+            </h4>
+            <div class="text-darkGrayBlue font-bold">
+              72 <span class="text-darkGrayBlue opacity-40">/ 100</span>
+            </div>
+          </li>
+          <button
+            class="bg-darkGrayBlue p-4 rounded-full font-bold text-lg hover:bg-gradient-to-b from-lSlateBlueT to-lRoyalBlueT hover:transition-all hover:duration-500 lg:p-3 lg:mt-3 lg:text-base"
+          >
+            Continue
+          </button>
+        </ol>
+      </section>
+    </article>
+  </body>
+</html>
